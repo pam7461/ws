@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{display:none;}
+        div{display:none;}
+    </style>
+</head>
+<body>
+    <h1 onclick="
+        document.querySelector('h1').style.display='none';
+        document.querySelector('h2').style.display='block';
+        document.querySelector('div').style.display='block';
+    ">네비버튼</h1>
+    <h2 onclick="
+        document.querySelector('h1').style.display='block';
+        document.querySelector('h2').style.display='none';
+        document.querySelector('div').style.display='none';
+    ">닫기버튼</h2>
+    <div>네비게이션 내용</div>
+</body>
+</html>
