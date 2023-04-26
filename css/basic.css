@@ -1,0 +1,72 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+img{
+    width:100%;
+}
+/* 모바일스타일 */
+.active{
+    color:#0000ff;
+}
+.wrapper{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+}
+header{
+    margin-bottom:24px;
+    border-bottom:1px solid #000;
+    padding:12px;
+}
+h1{
+    text-align:center;
+}
+h1>a{
+    color:#000;
+}
+nav{
+    padding:12px 12px 12px 30px;
+}
+article{
+    padding:12px;
+}
+li{
+    margin:6px 0;
+    font-size:1.3em; 
+    font-weight:600;        
+}
+li>a{               
+    color:#000;
+    text-decoration:none;
+}
+footer{
+    padding:32px;
+    background-color:#000;
+}
+address{
+    font-style:normal;
+    color:#fff;
+    text-align:center;
+}
+
+/* 데스크탑스타일 미디어쿼리(960px 이상) */
+@media (min-width:960px){
+    header{
+        padding:18px;
+    }
+    h1>a{
+        color:#333;
+    }
+    nav{
+        display:inline-block;
+        width:25%;
+    }
+    article{
+        display:inline-block;
+        width:74%;
+        border-left:1px solid #000;
+        padding-left:24px;
+    }
+}
