@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX모델</title>
+    <style>
+        h1{
+            font-size:40px;
+            text-align:center;
+        }
+        h2{
+            font-weight:400;
+            font-size:26px;
+            color:darkblue;
+        }
+
+        /* 인라인박스 -> 블록박스 */
+        a{
+            width:500px;
+            height:500px;
+            border:1px red solid;
+            display:block;
+        }
+        /* 블록박스 -> 인라인박스 */
+        p{
+            width:500px;
+            height:500px;
+            border:1px blue solid;
+            display:inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>BOX모델</h1>
+    <hr>
+    <h2>인라인박스</h2>
+    <a href="#">1111111</a>
+    <a href="#">22</a>
+    <a href="#">3333</a>
+
+    <h2>블록박스</h2>
+    <p>a</p><p>b</p><p>c</p>
+
+</body>
+</html>
