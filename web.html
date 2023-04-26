@@ -4,31 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB란 무엇인가?</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>web</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        img{
+            width:100%;
+        }
+        /* 모바일스타일 */
+        .active{
+            color:#0000ff;
+        }
+        .wrapper{
+            width:100%;
+            max-width:960px;
+            margin:0 auto;
+        }
+        header{
+            margin-bottom:24px;
+            border-bottom:1px solid #000;
+            padding:12px;
+        }
+        h1{
+            text-align:center;
+        }
+        h1>a{
+            color:#000;
+        }
+        nav{
+            padding:12px 12px 12px 30px;
+        }
+        article{
+            padding:12px;
+        }
+        li{
+            margin:6px 0;
+            font-size:1.3em; 
+            font-weight:600;        
+        }
+        li>a{               
+            color:#000;
+            text-decoration:none;
+        }
+        footer{
+            padding:32px;
+            background-color:#000;
+        }
+        address{
+            font-style:normal;
+            color:#fff;
+            text-align:center;
+        }
+
+        /* 데스크탑스타일 미디어쿼리(960px 이상) */
+        @media (min-width:960px){
+            header{
+                padding:18px;
+            }
+            h1>a{
+                color:#333;
+            }
+            nav{
+                display:inline-block;
+                width:25%;
+            }
+            article{
+                display:inline-block;
+                width:74%;
+                border-left:1px solid #000;
+                padding-left:24px;
+            }
+        }
+       
+    </style>
 </head>
 <body>
-    <h1>
-        <a href="./web.html" class="active">WEB</a>
-    </h1>
-    <ol>
-        <li>
-            <a href="./html.html">HTML</a>
-        </li>
-        <li>
-            <a href="./css.html">CSS</a>
-        </li>
-        <li>
-            <a href="./js.html">javaScript</a>
-        </li>
-    </ol>
-    <h2>WEB란 무엇인가?</h2>
-    <img src="./images/img-web.jpg" alt="웹이미지">
-    <p>
-        <strong>월드 와이드 웹(World Wide Web, WWW, W3)</strong>은 인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다. 간단히 웹(the Web)이라 부르는 경우가 많다. 이 용어는 인터넷과 동의어로 쓰이는 경우가 많으나 엄격히 말해 서로 다른 개념이다. 웹은 전자 메일과 같이 인터넷 상에서 동작하는 하나의 서비스일 뿐이다. 그러나 1993년 이래로 웹은 인터넷 구조의 절대적 위치를 차지하고 있다.
-    </p>
-    <p>
-        <u>인터넷</u>에서 HTTP 프로토콜, 하이퍼텍스트, HTML형식 등을 사용하여 그림과 문자를 교환하는 전송방식을 말하기도 한다.
-    </p>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="./web.html">WEB</a>            
+            </h1>        
+        </header>
+        <section>
+            <nav>
+                <ol>
+                    <li><a href="./html.html">HTML</a></li>
+                    <li><a href="./css.html">CSS</a></li>
+                    <li><a href="./js.html">javaScript</a></li>
+                </ol>
+            </nav>
+            <article>
+                <h2>WEB이란 무엇인가?</h2>
+                <img src="./images/img-web.jpg" alt="웹이미지">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, fuga, asperiores cumque temporibus magni recusandae quae est autem consequatur, impedit esse minus. Dolorum, molestias quos labore harum quod ratione repellendus!
+                    Similique rerum autem, itaque tenetur maxime tempore cupiditate maiores quod eligendi numquam velit aperiam quo voluptatum nesciunt in iusto qui debitis ducimus magni quos, ut blanditiis quis eos dolorem! Illum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus accusantium nesciunt modi molestias, optio commodi consequuntur recusandae natus minima. Quam aliquam voluptatibus cum animi odit, placeat neque expedita quisquam eveniet.
+                    Odit dolor laborum velit eligendi ipsam veritatis explicabo eum cumque dolorum, sunt fugit nulla. Omnis enim pariatur facilis in architecto ut voluptate, fugiat tempore atque quibusdam explicabo, quo consequuntur. Expedita.
+                </p>
+            </article>
+        </section>
+        <footer>
+            <address>인천광역시 서구 당하동1-1</address>
+        </footer>
+    </div>
 </body>
 </html>
