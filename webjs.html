@@ -8,7 +8,12 @@
 </head>
 <body>
     <h1>WEB</h1>
-    <button onclick="        
+    <button onclick="
+    let btn3;
+    btn3=document.querySelector('button').innerText;
+    if(btn3=='dark'){
+        // 다크모드
+        document.querySelector('button').innerText='light';
         document.querySelector('body').style.backgroundColor='#161616';
         document.querySelector('h1').style.color='#7fffd4';
         document.querySelector('h2').style.color='#e0ffff';        
@@ -30,9 +35,10 @@
         for(idxNum=0;idxNum<=pTag.length-1;idxNum++){
             pTag[idxNum].style.color='#808080';
         }
-    ">DARK</button>
-    
-    <button onclick="
+
+    }else{
+        // 라이트모드
+        document.querySelector('button').innerText='dark';
         document.querySelector('body').style.backgroundColor='#ffffff';
         document.querySelector('h1').style.color='#000000';
         document.querySelector('h2').style.color='#000000';
@@ -53,16 +59,7 @@
         pTag2=document.querySelectorAll('p');
         for(cnt=0;cnt<=pTag2.length-1;cnt++){
             pTag2[cnt].style.color='#000000';
-        }        
-    ">LIGHT</button>
-
-    <button onclick="
-    let btn3;
-    btn3=document.querySelectorAll('button')[2].innerText;
-    if(btn3=='dark'){
-        document.querySelectorAll('button')[2].innerText='light';
-    }else{
-        document.querySelectorAll('button')[2].innerText='dark';
+        }
     }
     
     ">dark</button>
