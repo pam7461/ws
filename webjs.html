@@ -4,17 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webjs</title>    
-    <style>
-    /* 
-        body{background-color:#161616;}
-        h1{color:#7fffd4;}
-        li{color:#8b0000;}
-        a{color:#8b0000;}
-        h2{color:#e0ffff;}
-        p{color:#808080;} 
-    */
-    </style>
+    <title>webjs</title> 
 </head>
 <body>
     <h1>WEB</h1>
@@ -40,7 +30,31 @@
         for(idxNum=0;idxNum<=pTag.length-1;idxNum++){
             pTag[idxNum].style.color='#808080';
         }
-    ">다크모드</button>
+    ">DARK</button>
+    
+    <button onclick="
+        document.querySelector('body').style.backgroundColor='#ffffff';
+        document.querySelector('h1').style.color='#000000';
+        document.querySelector('h2').style.color='#000000';
+
+        let liTag2;
+        liTag2=document.querySelectorAll('li');
+        for(cnt=0;cnt<=liTag2.length-1;cnt++){
+            liTag2[cnt].style.color='#000000';
+        }
+
+        let aTag2;
+        aTag2=document.querySelectorAll('a');
+        for(cnt=0;cnt<=aTag2.length-1;cnt++){
+            aTag2[cnt].style.color='#0000ff';
+        }
+
+        let pTag2;
+        pTag2=document.querySelectorAll('p');
+        for(cnt=0;cnt<=pTag2.length-1;cnt++){
+            pTag2[cnt].style.color='#000000';
+        }        
+    ">LIGHT</button>
     <ol>
         <li><a href="#">HTML</a></li>
         <li><a href="#">CSS</a></li>
