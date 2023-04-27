@@ -21,8 +21,7 @@
     <button onclick="        
         document.querySelector('body').style.backgroundColor='#161616';
         document.querySelector('h1').style.color='#7fffd4';
-        document.querySelector('h2').style.color='#e0ffff';
-        
+        document.querySelector('h2').style.color='#e0ffff';        
         
         let pTag;
         pTag=document.querySelectorAll('p');
@@ -30,20 +29,17 @@
             pTag[idxNum].style.color='#808080';
         }
 
-
-
-
         let liTag;
         liTag=document.querySelectorAll('li');
-        liTag[0].style.color='#8b0000';
-        liTag[1].style.color='#8b0000';
-        liTag[2].style.color='#8b0000';
+        for(idxNum=0;idxNum<=liTag.length-1;idxNum++){
+            liTag[idxNum].style.color='#8b0000';
+        }
 
         let aTag;
         aTag=document.querySelectorAll('a');
-        aTag[0].style.color='#8b0000';
-        aTag[1].style.color='#8b0000';
-        aTag[2].style.color='#8b0000';
+        for(idxNum=0;idxNum<=aTag.length-1;idxNum++){
+            aTag[idxNum].style.color='#8b0000';
+        }
     ">다크모드</button>
     <ol>
         <li><a href="#">HTML</a></li>
