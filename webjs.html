@@ -55,6 +55,17 @@
             pTag2[cnt].style.color='#000000';
         }        
     ">LIGHT</button>
+
+    <button onclick="
+    let btn3;
+    btn3=document.querySelectorAll('button')[2].innerText;
+    if(btn3=='dark'){
+        document.querySelectorAll('button')[2].innerText='light';
+    }else{
+        document.querySelectorAll('button')[2].innerText='dark';
+    }
+    
+    ">dark</button>
     <ol>
         <li><a href="#">HTML</a></li>
         <li><a href="#">CSS</a></li>
