@@ -9,60 +9,47 @@
 <body>
     <h1>WEB</h1>
     <button onclick="
-    let btn3;
-    btn3=document.querySelector('button').innerText;
-    if(btn3=='dark'){
-        // 다크모드
-        document.querySelector('button').innerText='light';
-        document.querySelector('body').style.backgroundColor='#161616';
-        document.querySelector('h1').style.color='#7fffd4';
-        document.querySelector('h2').style.color='#e0ffff';        
-        
-        let liTag;
-        liTag=document.querySelectorAll('li');
-        for(idxNum=0;idxNum<=liTag.length-1;idxNum++){
-            liTag[idxNum].style.color='#8b0000';
-        }
+        let btn=document.querySelector('button');
+        let bodyTag = document.querySelector('body');
+        let h1Tag = document.querySelector('h1');
+        let h2Tag = document.querySelector('h2');
+        let liTag = document.querySelectorAll('li');
+        let aTag = document.querySelectorAll('a');
+        let pTag = document.querySelectorAll('p');
 
-        let aTag;
-        aTag=document.querySelectorAll('a');
-        for(idxNum=0;idxNum<=aTag.length-1;idxNum++){
-            aTag[idxNum].style.color='#8b0000';
-        }
+        if(btn.innerText=='dark'){
+            // 다크모드
+            btn.innerText='light';
+            bodyTag.style.backgroundColor='#000';
+            h1Tag.style.color='#fff';
+            h2Tag.style.color='#fff';
+            for(idx=0;idx<=liTag.length-1;idx++){
+                liTag[idx].style.color='#fff';
+            }
+            for(idx=0;idx<=aTag.length-1;idx++){
+                aTag[idx].style.color='#fff';
+            }
+            for(idx=0;idx<=pTag.length-1;idx++){
+                pTag[idx].style.color='#fff';
+            }
 
-        let pTag;
-        pTag=document.querySelectorAll('p');
-        for(idxNum=0;idxNum<=pTag.length-1;idxNum++){
-            pTag[idxNum].style.color='#808080';
+        }else{
+            // 라이드모드
+            btn.innerText='dark';
+            bodyTag.style.backgroundColor='#fff';
+            h1Tag.style.color='#000';
+            h2Tag.style.color='#000';
+            for(idx=0;idx<=liTag.length-1;idx++){
+                liTag[idx].style.color='#000';
+            }
+            for(idx=0;idx<=aTag.length-1;idx++){
+                aTag[idx].style.color='#00f';
+            }
+            for(idx=0;idx<=pTag.length-1;idx++){
+                pTag[idx].style.color='#000';
+            }
         }
-
-    }else{
-        // 라이트모드
-        document.querySelector('button').innerText='dark';
-        document.querySelector('body').style.backgroundColor='#ffffff';
-        document.querySelector('h1').style.color='#000000';
-        document.querySelector('h2').style.color='#000000';
-
-        let liTag2;
-        liTag2=document.querySelectorAll('li');
-        for(cnt=0;cnt<=liTag2.length-1;cnt++){
-            liTag2[cnt].style.color='#000000';
-        }
-
-        let aTag2;
-        aTag2=document.querySelectorAll('a');
-        for(cnt=0;cnt<=aTag2.length-1;cnt++){
-            aTag2[cnt].style.color='#0000ff';
-        }
-
-        let pTag2;
-        pTag2=document.querySelectorAll('p');
-        for(cnt=0;cnt<=pTag2.length-1;cnt++){
-            pTag2[cnt].style.color='#000000';
-        }
-    }
-    
-    ">dark</button>
+    ">dark</button>    
     <ol>
         <li><a href="#">HTML</a></li>
         <li><a href="#">CSS</a></li>
